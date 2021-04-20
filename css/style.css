@@ -1,0 +1,230 @@
+* {
+    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* Small Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Miduam Screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screen */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*------------------------------
+# Start navbar
+-------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #407bff;
+    color: #fff;
+}
+
+nav #check,
+nav .checkbtn {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    
+     nav #check:checked ~ ul {
+        left: 0;
+    }
+    
+    nav .checkbtn {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+    }
+}
+
+nav .checkbtn i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    line-height: 79px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {    
+    nav ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 132vh;
+        top: 79px;
+       left: -105%;
+        background-color: black;
+        text-align: center;
+    }
+}
+
+nav ul li {
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    nav ul li {
+        margin-top: 40px;
+    }
+    
+    nav ul li:hover:not(.active) {
+        padding-right: 20px
+    }
+}
+
+nav ul li strong {
+    background-color: #3766d0;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
+}
+
+nav ul li strong:hover {
+    background-color: #1b55d6;
+}
+/*------------------------------
+# End navbar
+-------------------------------*/
+
+/*------------------------------
+# Start Header-info
+-------------------------------*/
+.days-trial .info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .days-trial .info {
+        flex-wrap: wrap;
+    }
+}
+
+.days-trial .trial {
+    padding-top: 50px;
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .days-trial .trial {
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.days-trial .trial h1 {
+    text-transform: capitalize;
+}
+
+.days-trial .trial p {
+    line-height: 1.5;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+.days-trial .trial .buy {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.days-trial .trial .buy a {
+    background-image:linear-gradient(to right,#3362cc1a,rgb(51 98 204));
+    padding: 15px 30px;
+    border-radius: 62px;
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .days-trial .trial .buy a {
+        padding: 15px 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #first {
+        order: 2;
+        display: block;
+    }
+    
+    #second {
+        order: 1;
+        max-width: 100%;
+    }
+}
+/*-------------------- Start Image --------------------*/
+.days-trial .info .image {
+    width: 50%;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+    .days-trial .info .image {
+        width: 100%;
+    }
+}
+
+.days-trial .info .image img {
+    width: 100%;
+}
+/*-------------------- End Image --------------------*/
+
+/*------------------------------
+# End Header-info
+-------------------------------*/
